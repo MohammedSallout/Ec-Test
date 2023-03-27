@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./seller.css" />
+    <script
+      src="https://kit.fontawesome.com/9a8ddb3d78.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Seller</title>
+  </head>
+  <body>
+    <div class="page">
+      <div id="overlay"></div>
+      <header>
+        <div class="container">
+          <h1 class="logo">E-commerce App/ Seller</h1>
+        </div>
+      </header>
+      <section class="seller">
+        <div class="container">
+          <div class="add">
+            <button id="add-product">Add New Product</button>
+          </div>
+          <div class="group">
+            <!-- <div class="seller-content">
+          <div class="item">
+            <h3>Item</h3>
+            <img src="../img/ip-14.jpg" alt="Iphone-14-proMax" />
+            <h5>Iphone 14 Pro Max</h5>
+          </div>
+          <div class="price">
+            <h3>Price</h3>
+            <span>$2300</span>
+          </div>
+          <div class="category">
+            <h3>Category</h3>
+            <span>Mobile</span>
+          </div>
+          <div class="action">
+            <h3>Action</h3>
+            <i class="fa-solid fa-pen-to-square" id="edit-product"></i>
+            <i class="fa-solid fa-trash" id="delete-product"></i>
+          </div>
+        </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- Start popup -->
+      <div class="popup">
+        <form>
+          <input type="text" id="id-no" hidden />
+          <div class="name">
+            <label>Product Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="price">
+            <label>Price</label>
+            <input type="number" id="price" />
+          </div>
+          <div class="img">
+            <label>Image</label>
+            <input type="url" id="img" />
+          </div>
+          <div class="img">
+            <label>Category</label>
+            <select id="category">
+              <option>Mobile</option>
+              <option>Laptop</option>
+              <option>Clothes</option>
+              <option>Shoes</option>
+            </select>
+          </div>
+          <button type="submit" id="submit-product">Submit Product</button>
+          <button type="submit" id="save-product" hidden>Save Product</button>
+        </form>
+      </div>
+      <!-- End popup -->
+    </div>
+    <script src="./js/dom.js"></script>
+    <script src="./js/seller.js"></script>
+  </body>
+</html>

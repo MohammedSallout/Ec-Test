@@ -1,0 +1,170 @@
+/* Start Global Roles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --main-duration: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Roles */
+
+header {
+  padding: 30px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .cart {
+  position: relative;
+}
+
+header .cart a {
+  color: black;
+  font-size: 22px;
+}
+
+header .cart .cart-counter {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  top: -20px;
+  right: -12.5px;
+}
+
+.filter {
+  padding: 20px 0;
+}
+
+.filter .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media(max-width: 991px) {
+  .filter .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.filter .search label,
+.filter .category label {
+  font-weight: bold;
+}
+
+.filter .search input,
+.filter .category select {
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+.products {
+  padding: 40px 0;
+}
+
+.products .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.products .product {
+  flex-basis: calc(94% / 4);
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.products .product .image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.products .product .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.products .product .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.products .product .bottom .price {
+  font-weight: bold;
+  color: green;
+}
+
+.products .product .bottom #add-cart {
+  font-size: 24px;
+  cursor: pointer;
+  color: crimson;
+}

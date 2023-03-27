@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/9a8ddb3d78.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Buyer_Customer</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">E-commerce App</h1>
+        <div class="cart">
+          <a href="./cart.html">
+            <span>Cart</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <span class="cart-counter">0</span>
+        </div>
+      </div>
+    </header>
+    <section class="filter">
+      <div class="container">
+        <div class="search">
+          <label>Search By Name</label>
+          <input type="search" id="search" />
+        </div>
+        <div class="category">
+          <label>Choose By Category</label>
+          <select id="category">
+            <option selected>All</option>
+            <option>Mobile</option>
+            <option>Laptop</option>
+            <option>Clothes</option>
+            <option>Shoes</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container" id="home-container">
+        <!-- <div class="product">
+          <div class="image">
+            <img src="../img/ip-14.jpg" alt="Iphone-14-proMax" />
+          </div>
+          <h3 class="title">Iphone 14 Pro Max</h3>
+          <div class="bottom">
+            <span class="price">$2300</span>
+            <i class="fa-solid fa-cart-plus" id="add-cart"></i>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <script src="./js/dom.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

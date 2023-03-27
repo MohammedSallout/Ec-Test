@@ -1,0 +1,235 @@
+/* Start Global Roles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --main-duration: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Roles */
+
+header {
+  padding: 30px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 767px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+.seller .add {
+  margin-bottom: 30px;
+}
+
+.seller .add button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seller {
+  padding: 30px 0;
+}
+
+.seller .seller-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.seller .seller-content > div {
+  align-self: flex-start;
+  text-align: center;
+}
+
+@media(max-width: 767px) {
+  .seller .seller-content .category {
+    display: none;
+  }
+}
+
+.seller .seller-content .item img {
+  width: 80px;
+  height: 80px;
+}
+
+.seller .seller-content > div:not(:first-child) h3 {
+  margin-bottom: 40px;
+}
+
+.seller .seller-content .price span,
+.seller .seller-content .category span {
+  font-size: 18px;
+}
+
+.seller .seller-content .action #edit-product {
+  font-size: 20px;
+  color: blue;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.seller .seller-content .action #delete-product {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+/* Start popup */
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  margin: 60px auto;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  display: none;
+  z-index: 90;
+}
+
+.popup form div {
+  padding: 0 100px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 991px) {
+  .popup {
+    width: 80%;
+  }
+  .popup form div {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.popup form label {
+  font-weight: bold;
+}
+
+@media(max-width: 1199px) {
+  .popup form div {
+    flex-direction: column;
+  }
+
+  .popup form label {
+    margin-bottom: 10px;
+  }
+}
+
+.popup form input {
+  outline: none;
+  border: none;
+  border: 1px solid darkgray;
+  padding: 5px 15px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.popup form input:focus {
+  border: 1px solid #111;
+}
+
+.popup form select {
+  outline: none;
+  border: none;
+  border: 1px solid darkgray;
+  padding: 5px 15px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.popup form textarea:focus {
+  border: 1px solid #111;
+}
+
+.popup form button {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  background-color: #111;
+  cursor: pointer;
+  color: white;
+}
+/* End popup */

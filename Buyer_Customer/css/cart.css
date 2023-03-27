@@ -1,0 +1,147 @@
+/* Start Global Roles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --main-duration: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Roles */
+
+header {
+  padding: 30px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carts {
+  padding: 30px 0;
+}
+
+.carts .cart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.carts .cart > div {
+  align-self: flex-start;
+  text-align: center;
+}
+
+@media(max-width: 767px) {
+  .carts .cart .category {
+    display: none;
+  }
+}
+
+.carts .cart .item img {
+  width: 80px;
+  height: 80px;
+}
+
+.carts .cart > div:not(:first-child) h3 {
+  margin-bottom: 40px;
+}
+
+.carts .cart .price span,
+.carts .cart .category span {
+  font-size: 18px;
+}
+
+.carts .cart .delete #delete-cart {
+  font-size: 22px;
+  color: red;
+  cursor: pointer;
+}
+
+.order {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media(max-width: 767px) {
+  .order {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.order h2 {
+  width: fit-content;
+  padding: 15px;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.order h2 span {
+  color: red;
+}
+
+.order button {
+  border: none;
+  background-color: green;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.order button a {
+  color: white;
+  font-size: 15px;
+}
